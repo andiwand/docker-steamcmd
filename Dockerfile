@@ -23,4 +23,4 @@ USER steam
 
 WORKDIR "${STEAM_HOME}"
 
-ENTRYPOINT "./steamcmd"
+ENTRYPOINT "./steamcmd.sh"
