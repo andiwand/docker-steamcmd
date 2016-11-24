@@ -1,6 +1,8 @@
 FROM ubuntu:16.04
 
-ENV STEAM_HOME "/usr/local/steam"
+ARG STEAM_HOME="/usr/local/steam"
+
+ENV STEAM_HOME="${STEAM_HOME}"
 
 RUN apt-get update \
     && apt-get install -y \
